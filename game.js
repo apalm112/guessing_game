@@ -47,7 +47,7 @@ var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.
 // numeric answer-question next
 var tourWins = prompt('How many Tour de France\'s\ did Greg LeMond win?');
   if (tourWins === '3') {
-    alert('That is correct!');
+    alert('That is correct!  He won in 1986, 1989 and 1990.');
   } else if (tourWins > '3') {
     alert('Incorrect, he did not win that many.');
   } else {
