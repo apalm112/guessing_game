@@ -53,5 +53,10 @@ var tourWins = prompt('How many Tour de France\'s\ did Greg LeMond win?');
   } else {
     alert('Incorrect, he won more than that.');
   }
-
-
+// add a joke
+var joke = prompt('Why do you need to carry radioactive materials in sealed, lead containers?')
+  if (joke.toLowerCase === 'why') {
+  alert('To stop it from falling out!');
+  } else {
+    alert('To stop it from falling out!');
+  }
