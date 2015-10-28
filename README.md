@@ -1,2 +1,8 @@
-# guessing_game
-Guessing game built with HTML, CSS and JavaScript.
+Name of Assignment:  Code: Start Using GitHub!
+
+Adam Palmer
+
+Brief Description:  This assignment continues to build on the Javascript guessing game made from a previous assignment.  It adds a couple of more questions for the user to answer, tells a joke & most importantly gets the coder to practice the art of adding, committing & pushing files GitHub.
+
+Citation of code sources: I used the IF / Else code for the guessing game that Sam went over in class on Tuesday, which I believe was Miranda's.
+
