@@ -11,7 +11,7 @@ var newCoder = prompt('Am I new to coding?  Yes or No');
       alert('Wrong answer, ' + name + '. ' + ' I am new to coding!');
       console.log('Incorrect answer');
       }
-var readTolkien = prompt('Have I read the Lord of the Rings trilogy? Yes or No');
+var readTolkien = prompt('Have I read the Lord of the Rings trilogy?  Yes or No');
   if (readTolkien.toLowerCase() === 'yes' || readTolkien.toLowerCase() === 'y' ){
     alert('Right answer, ' + name + ' I read those books, before the movies came out!');
     score += 1;
@@ -29,7 +29,6 @@ var favoriteSport = prompt('Is my favorite sport cycling?');
      alert('Wrong answer, cycling is my favorite sport.');
      console.log('Incorrect answer');
   }
-
 var age = prompt('How old am I?');
   if (age > 42) {
     alert('Your answer is too high, I\'m\ not that old.');
@@ -38,4 +37,12 @@ var age = prompt('How old am I?');
   } else {
       alert('Your answer is correct!  I am 42.');
   }
+var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.');
+  if (stp.toLowerCase() === 'y' || stp.toLowerCase() === 'yes') {
+    alert('That is correct!  I\'ve\ done it three times.');
+    console.log('Correct answer');
+  } else {
+    alert('That is incorrect.  I have ridden the STP.');
+  }
+
 
