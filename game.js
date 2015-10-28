@@ -44,5 +44,14 @@ var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.
   } else {
     alert('That is incorrect.  I have ridden the STP.');
   }
+// numeric answer-question next
+var tourWins = prompt('How many Tour de France\'s\ did Greg LeMond win?');
+  if (tourWins === '3') {
+    alert('That is correct!');
+  } else if (tourWins > '3') {
+    alert('Incorrect, he did not win that many.');
+  } else {
+    alert('Incorrect, he won more than that.');
+  }
 
 
