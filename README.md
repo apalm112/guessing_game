@@ -1,6 +1,8 @@
 Name of Assignment:  Code: Start Using GitHub!
+Driver: Lorentin Buca
+Navigator: Adam Palmer
 
-Adam Palmer
+Guessing Game code was worked as a pair.
 
 Brief Description:  This assignment continues to build on the Javascript guessing game made from a previous assignment.  It adds a couple of more questions for the user to answer, tells a joke & most importantly gets the coder to practice the art of adding, committing & pushing files GitHub.
 
