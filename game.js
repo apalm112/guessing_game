@@ -11,9 +11,11 @@ var newCoder = prompt('Am I new to coding?  Yes or No');
     ans1.innerHTML = 'Right answer, ' + name + '. ' +' I am learning to code.' + '<br><img width="300" src="' + image1 + '">';
     console.log('Correct answer');
     score += 1;
+    ans1.className = 'green';
     } else  {
       console.log('Incorrect answer');
-      ans1.innerHTML = 'Wrong asnwer, ' + name + '. ' + ' I am new to coding!';
+      ans1.innerHTML = 'Wrong answer, ' + name + '. ' + ' I am new to coding!';
+      ans1.className = 'red';
       }
     }
 function secondQuestion(){
@@ -24,9 +26,11 @@ var readTolkien = prompt('Have I read the Lord of the Rings trilogy?  Yes or No'
     ans2.innerHTML = 'Right answer,' + name + 'I read those books before the movies came out!' + '<br><img width="300" src="' + image2 + '">';
     score += 1;
     console.log('Correct answer');
+    ans2.className = 'green';
     } else {
       ans2.innerHTML = 'Wrong answer, ' + name + '. ' + ' I have read those books & you should too.'
       console.log('Incorrect answer');
+      ans2.className = 'red';
       }
     }
 function thirdQuestion(){
@@ -38,9 +42,11 @@ var favoriteSport = prompt('Is my favorite sport cycling?');
 
     score += 1;
     console.log('Correct answer');
+    ans3.className = 'green';
    } else  {
     ans3.innerHTML = 'Wrong answer, cycling is my favorite sport.';
     console.log('Incorrect answer');
+    ans3.className = 'red';
     }
   }
 function fourthQuestion(){
@@ -49,12 +55,15 @@ var ans4 = document.getElementById('answer4');
 var age = prompt('How old am I?');
   if (age > 42) {
     ans4.innerHTML = 'Your answer is too high, I\'m\ not that old.';
+    ans4.className = 'red';
 
   } else if (age < 42) {
     ans4.innerHTML = 'Your answer is too low, I\'m\ not that young.';
+    ans4.className = 'red';
 
   } else {
     ans4.innerHTML = 'Your answer is correct!  I am 42.' + '<br><img width="300" src="' + image4 + '">';
+    ans4.className = 'green';
     }
   }
 function fifthQuestion(){
@@ -64,8 +73,10 @@ var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.
   if (stp.toLowerCase() === 'y' || stp.toLowerCase() === 'yes') {
     ans5.innerHTML = 'That is correct!  I\'ve\ done it three times.' + '<br><img width="300" src="' + image5 + '">';
     console.log('Correct answer');
+    ans5.className = 'green';
   } else {
     ans5.innerHTML = 'That is incorrect.  I have ridden the STP.';
+    ans5.className = 'red';
     }
   }
 // numeric answer-question next
@@ -75,10 +86,13 @@ var ans6 = document.getElementById('answer6');
 var tourWins = prompt('How many Tour de France\'s\ did Greg LeMond win?');
   if (tourWins === '3') {
     ans6.innerHTML = 'That is correct!  He won in 1986, 1989 and 1990.' + '<br><img width="300" src="' + image6 + '">';
+    ans6.className = 'green';
   } else if (tourWins > '3') {
     ans6.innerHTML = 'Incorrect, he did not win that many.';
+    ans6.className = 'red';
   } else {
     ans6.innerHTML = 'Incorrect, he won more than that.';
+    ans6.className = 'red';
    }
   }
 
