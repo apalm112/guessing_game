@@ -4,10 +4,11 @@ var name = prompt('What is your name?');
 var score = 0;
 
 function firstQuestion(){
+var image1 = 'img/img1.jpg';
 var ans1 = document.getElementById('answer1');
 var newCoder = prompt('Am I new to coding?  Yes or No');
   if (newCoder.toLowerCase() === 'yes' || newCoder.toLowerCase() === 'y') {
-    ans1.innerHTML = 'Right answer, ' + name + '. ' +' I am learning to code.';
+    ans1.innerHTML = 'Right answer, ' + name + '. ' +' I am learning to code.' + '<br><img width="300" src="' + image1 + '">';
     console.log('Correct answer');
     score += 1;
     } else  {
@@ -16,10 +17,11 @@ var newCoder = prompt('Am I new to coding?  Yes or No');
       }
     }
 function secondQuestion(){
+var image2 = 'img/img2.jpg';
 var ans2 = document.getElementById('answer2');
 var readTolkien = prompt('Have I read the Lord of the Rings trilogy?  Yes or No');
   if (readTolkien.toLowerCase() === 'yes' || readTolkien.toLowerCase() === 'y' ){
-    ans2.innerHTML = 'Right answer,' + name + 'I read those books before the movies came out!';
+    ans2.innerHTML = 'Right answer,' + name + 'I read those books before the movies came out!' + '<br><img width="300" src="' + image2 + '">';
     score += 1;
     console.log('Correct answer');
     } else {
@@ -28,10 +30,11 @@ var readTolkien = prompt('Have I read the Lord of the Rings trilogy?  Yes or No'
       }
     }
 function thirdQuestion(){
+var image3 = 'img/img3.jpg';
 var ans3 = document.getElementById('answer3');
 var favoriteSport = prompt('Is my favorite sport cycling?');
   if (favoriteSport.toLowerCase() === 'yes' || favoriteSport.toLowerCase() === 'y' ) {
-    ans3.innerHTML = 'Yes, ' + name + '. ' + ' Cycling is awesome!';
+    ans3.innerHTML = 'Yes, ' + name + '. ' + ' Cycling is awesome!' + '<br><img width="300" src="' + image3 + '">';
 
     score += 1;
     console.log('Correct answer');
@@ -41,6 +44,7 @@ var favoriteSport = prompt('Is my favorite sport cycling?');
     }
   }
 function fourthQuestion(){
+var image4 = 'img/img4.jpg';
 var ans4 = document.getElementById('answer4');
 var age = prompt('How old am I?');
   if (age > 42) {
@@ -50,14 +54,15 @@ var age = prompt('How old am I?');
     ans4.innerHTML = 'Your answer is too low, I\'m\ not that young.';
 
   } else {
-    ans4.innerHTML = 'Your answer is correct!  I am 42.';
+    ans4.innerHTML = 'Your answer is correct!  I am 42.' + '<br><img width="300" src="' + image4 + '">';
     }
   }
 function fifthQuestion(){
+var image5 = 'img/img5.jpg';
 var ans5 = document.getElementById('answer5');
 var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.');
   if (stp.toLowerCase() === 'y' || stp.toLowerCase() === 'yes') {
-    ans5.innerHTML = 'That is correct!  I\'ve\ done it three times.';
+    ans5.innerHTML = 'That is correct!  I\'ve\ done it three times.' + '<br><img width="300" src="' + image5 + '">';
     console.log('Correct answer');
   } else {
     ans5.innerHTML = 'That is incorrect.  I have ridden the STP.';
@@ -65,10 +70,11 @@ var stp = prompt('Have I ridden from Seattle to Portland in one day?  Yes or No.
   }
 // numeric answer-question next
 function sixthQuestion(){
+var image6 = 'img/img6.jpg';
 var ans6 = document.getElementById('answer6');
 var tourWins = prompt('How many Tour de France\'s\ did Greg LeMond win?');
   if (tourWins === '3') {
-    ans6.innerHTML = 'That is correct!  He won in 1986, 1989 and 1990.';
+    ans6.innerHTML = 'That is correct!  He won in 1986, 1989 and 1990.' + '<br><img width="300" src="' + image6 + '">';
   } else if (tourWins > '3') {
     ans6.innerHTML = 'Incorrect, he did not win that many.';
   } else {
@@ -88,9 +94,17 @@ var joke = prompt('Why do you need to carry radioactive materials in sealed, lea
   }
 
 firstQuestion();
-secondQuestion();
-thirdQuestion();
-fourthQuestion();
-fifthQuestion();
-sixthQuestion();
-seventhQuestion();
+//setTimeout(firstQuestion, 1000);
+setTimeout(secondQuestion, 2000);
+// thirdQuestion();
+setTimeout(thirdQuestion, 2000);
+setTimeout(fourthQuestion, 2000);
+//fifthQuestion();
+setTimeout(fifthQuestion, 2000);
+setTimeout(sixthQuestion, 2000);
+// secondQuestion();
+// thirdQuestion();
+// fourthQuestion();
+// fifthQuestion();
+// sixthQuestion();
+// seventhQuestion();
