@@ -8,3 +8,6 @@ Brief Description:  This assignment continues to build on the Javascript guessin
 
 Citation of code sources: I used the IF / Else code for the guessing game that Sam went over in class on Tuesday, which I believe was Miranda's.
 
+October 30, 2015
+Driver: Chris Lee
+Navigator: Adam Palmer
